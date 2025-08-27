@@ -1,3 +1,6 @@
+---------------------
+# 1- First challenge
+----------------------
 # Validate the quality and correctness of email values
 '''
 must not be empty
@@ -38,3 +41,50 @@ if not (email[0].isalnum() and email[-1].isalnum()):
     print("email must start and end with a letter or digit")
 if valid:
     print("Email is valid")
+--===========================================================================
+-----------------------
+# 2- Second challenge
+------------------------
+# validate the quality and correctness of passwords
+'''
+must not be empty
+must be of atleast 8 characters
+must include atleast one uppercase
+must include atleast one lowercase
+must not be same as email
+must not contain any spaces
+must start and end with a letter or digit
+'''
+email = "harry@gmail.com"
+password = "harry@gmail.com"
+correct = True
+# password must not be empty
+if password == "":
+    print("password must not be empty")
+    correct = False
+# password must be of atleast 8 characters
+if len(password) < 8:
+    print("password must be of atleast 8 characters")
+    correct = False
+# password must include atleast one uppercase
+if not any(i.isupper() for i in password):
+    print("password must include atleast one uppercase")
+    correct = False
+# password must include atleast one lowercase
+if not any(i.islower() for i in password):
+    print("password must include atleast one lowercase")
+    correct = False
+# password must not be same as email
+if password == email:
+    print("password must not be same as email")
+    correct = False
+# password must not contain any spaces
+if " " in password:
+    print("password must not contain any spaces")
+    correct = False
+# password must start and end with a letter or digit
+if not (password[0].isalnum() and password[-1].isalnum()):
+    print("password must start and end with a letter or digit")
+    correct = False
+if correct:
+    print("password is correct")
