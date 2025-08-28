@@ -1,6 +1,6 @@
----------------------
+# ========================
 # 1- First challenge
-----------------------
+# ========================
 # Validate the quality and correctness of email values
 '''
 must not be empty
@@ -41,10 +41,10 @@ if not (email[0].isalnum() and email[-1].isalnum()):
     print("email must start and end with a letter or digit")
 if valid:
     print("Email is valid")
---===========================================================================
------------------------
+# ===============================================================================================================
+# =========================
 # 2- Second challenge
-------------------------
+# ==========================
 # validate the quality and correctness of passwords
 '''
 must not be empty
@@ -88,3 +88,31 @@ if not (password[0].isalnum() and password[-1].isalnum()):
     correct = False
 if correct:
     print("password is correct")
+    
+# =====================================================================================================================
+# =========================
+# 3- Third challenge
+# =========================
+
+# Write a Table of 7 using for loop
+var = 7
+for number in range(1, 11):
+    output = var * number
+    print(f"{var} * {number} = {output} ")
+
+
+# ====================================================================================================================
+
+# =========================
+# 4- Fourth challenge
+# =========================
+
+
+# print a left aligned pyramid of stars with 6 rows usin a for loop
+
+for var in range(1, 7):
+    output = var * "*"
+    print(f"{output}")
+
+
+
