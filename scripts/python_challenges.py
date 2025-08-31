@@ -149,3 +149,35 @@ for email in emails:
         break
     print(f"Processing emails: {email}")
 
+# ====================================================================================================================
+
+# =========================
+# 7- Seventh challenge
+# =========================
+
+# check for missing names on a list
+
+items = ["Kiara", "Tamannah", None, "Karizma"]
+for item in items:
+    if item is None:
+        print("Found a missing name")
+        break
+else:
+    print("All names are available")
+
+# ====================================================================================================================
+
+# =========================
+# 8- Eight challenge
+# =========================
+
+# check whether any filename appears more than once
+
+files = ["report.csv", "data.xlsx", "summary.docx", "report.csv", "data.csv"]
+for file in files:
+    if files.count(file) > 1:
+        print(f"Duplicate files are found: {file}")
+        break
+else:
+    print("All files are unique")
+
