@@ -180,4 +180,24 @@ for file in files:
         break
 else:
     print("All files are unique")
+    
+# ====================================================================================================================
 
+# =========================
+# 9- ninth challenge
+# =========================
+
+
+# Allow upto 3 attempts
+# if the user type yes , print glad we are on the same page
+# otherwise print 3 strikes< You are out
+
+attempts = 0
+while attempts < 3:
+    answer = input("Do you agree? (Yes/No)")
+    if answer == "yes":
+        print("Glad we are on the same page")
+        break
+    attempts += 1
+else:
+    print("3 Strikes. Youa re out")
