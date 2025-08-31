@@ -114,5 +114,38 @@ for var in range(1, 7):
     output = var * "*"
     print(f"{output}")
 
+# ====================================================================================================================
 
+# =========================
+# 5- Fifth challenge
+# =========================
+
+# loop through a list of days and print only the working days, skipping the weekends.
+
+Days = ["Monday", "Wednesday", "Sunday",
+        "Thursday", "Saturday", "Friday", "Tuesday"]
+Weekends = ["Saturday", "Sunday"]
+for day in Days:
+    if day in Weekends:
+        continue
+    print(f"My Working days are : {day}")
+
+
+# ====================================================================================================================
+
+# =========================
+# 6- Sixth challenge
+# =========================
+
+
+# scan emails to block unsafe data from entering your system
+
+emails = ["Mike@gmail.com", "Miley@outlook.de",
+          "Delete table data;", "jennifer@gmail.com"]
+
+for email in emails:
+    if ";" in email:
+        print("SQL Injection: Hacker Attack")
+        break
+    print(f"Processing emails: {email}")
 
