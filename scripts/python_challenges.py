@@ -201,3 +201,35 @@ while attempts < 3:
     attempts += 1
 else:
     print("3 Strikes. Youa re out")
+
+
+# ====================================================================================================================
+
+# =========================
+# 10- Tenth challenge
+# =========================
+# find users age in years
+
+from datetime import datetime
+birth_year = int(input("What is your birth_year: "))
+year_ = datetime.now().year
+age = year_ - birth_year
+print(f"Your age is: {age}")
+
+# ====================================================================================================================
+
+# =========================
+# 11- Eleventh challenge
+# =========================
+# find users age in days
+
+from datetime import datetime
+birth_date_ = input("Enter your birth_date in YYYY-MM-DD format: ")
+
+birth_date = datetime.strptime(birth_date_, "%Y-%m-%d")
+current_date = datetime.now()
+age_in_days = current_date - birth_date
+print(F"Your age in days is : {age_in_days}")
+
+
+
