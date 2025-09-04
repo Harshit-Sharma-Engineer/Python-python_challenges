@@ -231,5 +231,20 @@ current_date = datetime.now()
 age_in_days = current_date - birth_date
 print(F"Your age in days is : {age_in_days}")
 
+# ====================================================================================================================
 
-
+# =========================
+# 12- Twelfth challenge
+# =========================
+# Building a guess game
+secret_number = 7
+guess_counts = 0
+guess_limit = 3
+while guess_counts < guess_limit:
+    guess = int(input("Enter your number : "))
+    if guess == secret_number:
+        print("Wooh You guess it right")
+        break
+    guess_counts = guess_counts + 1
+else:
+    print("Better luck next time")
