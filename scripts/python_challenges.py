@@ -248,3 +248,22 @@ while guess_counts < guess_limit:
     guess_counts = guess_counts + 1
 else:
     print("Better luck next time")
+
+# ====================================================================================================================
+
+# =========================
+# 13- Thirteenth challenge
+# =========================
+
+# Check for a prime number
+
+Num = int(input("Enter the number: "))
+if Num > 1:
+    for i in range(2, Num):
+        if Num % i == 0:
+            print(f"{Num} is not a Prime Number")
+            break
+    else:
+        print(f"{Num} is a Prime Number")
+else:
+    print(f"{Num} is not a Prime Number")
