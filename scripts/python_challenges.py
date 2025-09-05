@@ -267,3 +267,28 @@ if Num > 1:
         print(f"{Num} is a Prime Number")
 else:
     print(f"{Num} is not a Prime Number")
+# ====================================================================================================================
+
+# =========================
+# 14- Fourteenth challenge
+# =========================
+
+# Building the car game
+
+command = ""
+while True:
+    command = input(">").lower()
+    if command == "start":
+        print("Car started....")
+    elif command == "stop":
+        print("Car stopped.")
+    elif command == "help":
+        print("""
+        start - To start the car
+        stop  - To Stop the car
+        quit  - To Quit
+        """)
+    elif command == "quit":
+        break
+    else:
+        print("Sorry I don't understand that!")
